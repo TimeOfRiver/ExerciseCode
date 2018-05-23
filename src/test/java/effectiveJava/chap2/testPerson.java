@@ -1,4 +1,4 @@
-package effectiveJava;
+package effectiveJava.chap2;
 
 import effectiveJava.chap2.Person;
 

@@ -1,4 +1,4 @@
-package effectiveJava;
+package effectiveJava.chap2;
 
 /**
  * ${DESCRIPTION}

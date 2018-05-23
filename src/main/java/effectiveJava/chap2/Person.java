@@ -1,4 +1,4 @@
-package effectiveJava;
+package effectiveJava.chap2;
 
 /**
  * build pattern:使用场景，构造器或者静态工厂中有多个参数时（特别是有可选参数时），首选Builder模式
@@ -15,7 +15,7 @@ public class Person {
     private final String phoneNumber;
     private final String address;
 
-    public static class Builder implements effectiveJava.Builder<Person> {
+    public static class Builder implements effectiveJava.chap2.Builder<Person> {
         // 必要参数
         private final String name;
         private final String phoneNumber;
@@ -50,6 +50,7 @@ public class Person {
             return this;
         }
 
+        @Override
         public Person build() {
             return new Person(this);
         }
