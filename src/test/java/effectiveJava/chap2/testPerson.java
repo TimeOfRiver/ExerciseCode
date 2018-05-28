@@ -13,5 +13,6 @@ public class testPerson {
         Person person = new Person.Builder("Neo","18366668888")
                 .age(24).idNumber("123321765432111111").build();
         System.out.println(person.toString());
+        
     }
 }
