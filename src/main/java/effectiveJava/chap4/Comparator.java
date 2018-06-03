@@ -27,6 +27,7 @@ class StringLengthComparatorV3 implements Comparator<String> {
 class Test {
     public static void main(String[] args) {
         String[] stringArray = {"q", "as", "fdg", "ab"};
+        // 使用匿名类进行参数额传递，如果需要进行多次调用的话，建议将函数对象存储到一个私有的静态final域里，并重用它
         Arrays.sort(stringArray, new java.util.Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
