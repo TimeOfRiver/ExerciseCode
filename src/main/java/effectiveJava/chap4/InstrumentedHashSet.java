@@ -40,8 +40,10 @@ public class InstrumentedHashSet<E> extends HashSet<E> {
 
     public static void main(String[] args) {
         InstrumentedHashSet<String> instrumentedHashSet = new InstrumentedHashSet<String>();
-        instrumentedHashSet.addAll(Arrays.asList("a","b","c"));
+        instrumentedHashSet.addAll(Arrays.asList("a", "b", "c"));
         System.out.println(instrumentedHashSet.getAddCount()); // 结果并不是3，而是6，因为addAll方法的内部实现依赖于add方法
+        System.out.println(1^2);// 异或操作，相同为0，不同为1
+        System.out.println(1^1);
     }
 
 }
