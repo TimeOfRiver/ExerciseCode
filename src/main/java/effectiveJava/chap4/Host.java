@@ -10,8 +10,8 @@ import java.io.Serializable;
  */
 public class Host {
 
-    private static class StrLenCmp implements Comparator<String>,Serializable{
-        public int compare(String s1,String s2){
+    private static class StrLenCmp implements Comparator<String>, Serializable {
+        public int compare(String s1, String s2) {
             return s1.length() - s2.length();
         }
 
