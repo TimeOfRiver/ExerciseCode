@@ -53,7 +53,6 @@ public class MethodTest {
         }
 
         System.out.println(set + " " + list);// [-3, -2, -1] [-3, -2, -1]
-
     }
 
     // 谨慎地选择方法的名称
@@ -65,6 +64,8 @@ public class MethodTest {
     //  对于参数类型，要优先使用接口，而不是类
     //  对于boolean参数，要优先使用两个元素的枚举
     //  谨慎重载
+    //  返回类型为数组或集合的方法没理由返回null，而不是返回一个零长度的数组或者集合
+    //  为所有导出的API元素编写文档注释
 }
 
 enum TemperatureScale {FAHREHEIT, CELSIUS}
