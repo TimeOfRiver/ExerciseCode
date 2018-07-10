@@ -1,8 +1,5 @@
 package effectiveJava.chap10;
 
-import sun.jvm.hotspot.oops.FieldType;
-
-import java.io.FileReader;
 import java.util.concurrent.*;
 
 /**
